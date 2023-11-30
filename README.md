@@ -3,12 +3,6 @@
 
 BCANet is a two-stage target detection network,This network uses a region proposal network (RPN), which can share the convolution features of the whole image with the detection network, so that the calculation of region proposal is almost cost free. The whole network further combines RPN and FastRcnn into a network by sharing the convolution features.
 
-# Dataset
-
-Note that you can run the scripts based on the dataset mentioned in original paper or widely used in relevant domain/network architecture. In the following sections, we will introduce how to run the scripts using the related dataset below.
-
-Dataset used: GarbageDump
-
 # Environment Requirements
 
 - Hardware（Ascend/GPU/CPU）
@@ -20,8 +14,6 @@ Dataset used: GarbageDump
     - [Ascend Hub](ascend.huawei.com/ascendhub/#/home)
 
 - Install [MindSpore](https://www.mindspore.cn/install/en).
-
-- We use Garbage_dump as training dataset in this example.
 
     1. If coco dataset is used. **Select dataset to coco when run script.**
         Install Cython and pycocotool, and you can also install mmcv to process data.
